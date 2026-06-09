@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // ── Data ──────────────────────────────────────────────────────────────────
 
@@ -640,7 +640,18 @@ export default function App() {
 const handleNavigate = (destination) => {
   setView(destination);
   window.scrollTo(0, 0);
+  window.history.pushState({ view: destination }, "");
 };
+
+useEffect(() => {
+  const handlePop = (e) => {
+    const v = e.state?.view ?? "cover";
+    setView(v);
+    window.scrollTo(0, 0);
+  };
+  window.addEventListener("popstate", handlePop);
+  return () => window.removeEventListener("popstate", handlePop);
+}, []);
 
   const currentStopNum = typeof view === "number" ? view : null;
 
