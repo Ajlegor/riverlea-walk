@@ -637,6 +637,11 @@ export default function App() {
 
   const handleChange = (key, val) => setInputs(prev => ({ ...prev, [key]: val }));
 
+const handleNavigate = (destination) => {
+  setView(destination);
+  window.scrollTo(0, 0);
+};
+
   const currentStopNum = typeof view === "number" ? view : null;
 
   return (
@@ -649,7 +654,7 @@ export default function App() {
           </span>
           <div className="nav-actions">
             {view !== "cover" && (
-              <button className="nav-btn" onClick={() => setView("cover")}>Home</button>
+              <button className="nav-btn" onClick={() => handleNavigate("cover")}>Home</button>
             )}
             {hasAnyContent(inputs) && (
               <button className="nav-btn active" onClick={() => setShowSave(true)}>Save notes</button>
@@ -657,8 +662,8 @@ export default function App() {
           </div>
         </div>
 
-        {view === "cover"    && <Cover onSelectStop={setView} inputs={inputs} />}
-        {view === "glossary" && <GlossaryView onBack={() => setView("cover")} />}
+        {view === "cover"    && <Cover onSelectStop={handleNavigate} inputs={inputs} />}
+        {view === "glossary" && <GlossaryView onBack={() => handleNavigate("cover")} />}
         {typeof view === "number" && (
           <StopView stopId={view} inputs={inputs} onChange={handleChange} onBack={() => setView("cover")} />
         )}
