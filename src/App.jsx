@@ -37,7 +37,7 @@ const STOPS = [
       },
       b: {
         label: "B — Rupture",
-        sub: "Post-apocalyptic. The same structures persist under new names.",
+        sub: "Post-apocalyptic. The same structures persist under new names. Something has to break.",
         prompt: "Describe Three Mills Island as a site where the origins of metabolic extraction are aestheticised and neutralised: where the beginning of the Anthropocene is repackaged as charm.",
       },
       debrief: "After writing: where exactly does the disavowal happen in position A? At what word, image or idea does the difficult history drop out?",
