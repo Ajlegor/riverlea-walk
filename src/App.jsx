@@ -17,7 +17,7 @@ const STOPS = [
     id: 1,
     title: "Three Mills Island",
     location: "Three Mill Lane, E3 3DU",
-    time: "9:30 – 10:15",
+    time: "10:00 – 10:30",
     orientation: "The House Mill has been tidal-powered since before the Domesday Book of 1086. It ground grain and produced gin by using the Thames tide, but is now a heritage site. That transition — from industrial engine to listed building — is the first disavowal you encounter today. The standard Anthropocene origin story begins with the Industrial Revolution in Northern Europe, and this mill is part of that story. Does beginning the story here (rather than in the plantation, the mine, the colony) change the picture? Whose labour and whose land made this mill's production possible, and what did early industrial technology like this make possible in the world?",
     questions: [
       {
@@ -47,7 +47,7 @@ const STOPS = [
     id: 2,
     title: "Carpenter's Road Lock",
     location: "Carpenter's Road Lock, E20 2ST",
-    time: "10:20 – 11:00",
+    time: "10:40 – 11:10",
     orientation: "We are looking at what used to be the Bow Back Rivers: a network of channels redirected and functionally erased across two centuries of industrial use. We've been walking beside a river system that has been infrastructurally consumed. Carpenter's Road Lock marks where this buried hydrological history meets the Olympic Park, whose construction required the largest post-industrial land decontamination in British history.",
     questions: [
       {
@@ -87,7 +87,7 @@ const STOPS = [
     id: 3,
     title: "Olympic Park — Wetland Margins",
     location: "Eastern wetland edge, enter from Carpenters Road",
-    time: "11:05 – 11:50",
+    time: "11:20 – 11:50",
     orientation: "The wetland margins of the Olympic Park are among the most biodiverse urban habitats in London. Every species, water channel and landform was installed by landscape architects over contaminated ground. This is what Anthropocene 'nature' often looks like: real ecology, genuinely alive, installed over buried harm.",
     questions: [
       {
